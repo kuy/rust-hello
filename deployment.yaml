@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: rust-hello
+  labels:
+    run: rust-hello
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: rust-hello
+    spec:
+      containers:
+        - name: app
+          image: netkuy/rust-hello:2
+          ports:
+            - protocol: TCP
+              containerPort: 3000

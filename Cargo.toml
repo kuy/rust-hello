@@ -1,0 +1,7 @@
+[package]
+name = "hello"
+version = "0.1.0"
+authors = ["Yuki Kodama <endflow.net@gmail.com>"]
+
+[dependencies]
+hyper = "0.12"
