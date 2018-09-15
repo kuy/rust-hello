@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: netkuy/rust-hello:2
+          image: netkuy/rust-hello:3
           ports:
             - protocol: TCP
               containerPort: 3000
