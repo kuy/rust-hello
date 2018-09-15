@@ -5,7 +5,7 @@ use hyper::{Body, Response, Server};
 use hyper::service::service_fn_ok;
 use hyper::rt::{self, Future};
 
-static PHRASE: &'static [u8] = b"Hello World!";
+static PHRASE: &'static [u8] = b"Hello Rust!";
 
 fn main() {
     let addr = ([0, 0, 0, 0], 3000).into();
